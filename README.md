@@ -4,7 +4,7 @@ RGB-T（可见光–红外）图像融合与目标检测网络。
 
 双流 MiT（SegFormer）骨干分别提取可见光与红外特征，将特征解耦为**基础分量**与**细节分量**，
 分别用卷积融合与小波/图融合模块处理，再经 MLP 解码头重建融合图像，
-同时由 CenterNet 风格的检测头输出目标检测结果。
+同时由检测头输出目标检测结果。
 
 ## 目录结构
 
@@ -68,10 +68,7 @@ python testv3.py \
   输出类别热图与边界框回归。
 - **消融变体**：`net_wo_moe.py`、`net_wo_fusion_module.py` 用于对比实验。
 
-## 备注
 
-`testv3.py` 依赖数据加载模块 `dataloderv2_norm_fog_ll`（`FusionDataset`），
-该模块不在此目录中，需自行提供。
 
 ## License
 
