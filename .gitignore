@@ -1,0 +1,32 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Model weights (too large for git; keep them locally)
+*.pth
+*.pt
+*.pkl
+*.ckpt
+*.pth.tar
+uav_final/
+
+# Training / inference outputs
+runs/
+logs/
+outputs/
+results/
+*.log
+
+# Datasets
+data/
+datasets/
+
+# Jupyter / editors
+.ipynb_checkpoints/
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
